@@ -1,2 +1,2 @@
-PythonExercicios/venv/*
-pythonteste/venv/*
+*/venv
+*/.idea
