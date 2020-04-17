@@ -1,3 +1,7 @@
+#Exercício Python 044: Elabore um programa que calcule o valor a ser pago por um produto,
+# considerando o seu preço normal e condição de pagamento:
+#- à vista dinheiro/cheque: 10% de desconto
+
 preconormal = float(input("Qual o preço normal do produto?"))
 formadepagamento = int(input("""Qual a forma de pagamento?
 
@@ -5,6 +9,7 @@ formadepagamento = int(input("""Qual a forma de pagamento?
 2: Á vista no cartão
 3: Em até 2x no cartão 
 4: 3x ou mais no cartão\n"""))
+
 
 if formadepagamento == 1:
     desconto = preconormal - (preconormal * 0.10)
