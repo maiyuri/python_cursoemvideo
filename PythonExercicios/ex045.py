@@ -1,13 +1,41 @@
-import emoji
 import random
+import time
 
-jokempo = input("Vamos jogar jokenp"
-                "Escolha um, pedra, papel ou tesoura?")
+lista = ["pedra", "papel", "tesoura"]
 
-sorteio = random.randint(1,3)
+jokempo = int(input("Vamos jogar jokenpô?\n"
+                "Escolha um:\n"
+                "[1] Pedra\n"
+                "[2] Papel\n"
+                "[3] Tesoura\n"
+                "Sua escolha: "))
 
-if sorteio == 1:
+time.sleep(1)
+print("Jokeeee", end="")
+time.sleep(1)
+print("eeeem", end="")
+time.sleep(1)
+print("pô!")
+time.sleep(0.5)
 
 
-print("Sorteio {}".format(sorteio))
+sorteio = random.randint(1, 3)
+
+print("--------------------------")
+if sorteio == jokempo:
+    print("Ops deu empate!!")
+elif sorteio == 1 and jokempo == 2:
+    print("Ihhuuu você venceu!")
+elif sorteio == 2 and jokempo == 3:
+    print("Você ganhou!")
+elif sorteio == 3 and jokempo == 1:
+    print("Você ganhou >.>")
+else:
+    print("eu ganhei HAHAHAHAHA")
+
+
+print("--------------------------")
+print("Máquina escolheu {}".format(lista[sorteio - 1]))
+
+
 
