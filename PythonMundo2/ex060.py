@@ -3,13 +3,11 @@
 
 import math
 
-
 num = int(input('''Por favor, insira um número e eu calcularei o fatorial dele
 numero: '''))
 n = num
 calc_fatorial = math.factorial(num)
-
-print("{}! = ".format(num), end= '')
+print("{}! = ".format(num), end='')
 
 while n > 0:
     print('{}'.format(n), end='')

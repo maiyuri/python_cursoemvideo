@@ -13,8 +13,10 @@ numerouser = int(input('Insira o número: '))
 
 while numerpc != numerouser:
     tentativas = tentativas + 1
-    numerouser = int(input('Errou, tente novamente: '))
-
+    if numerouser > numerpc:
+        numerouser = int(input('Menos...tente novamente: '))
+    elif numerouser < numerpc:
+        numerouser = int(input('Mais...tente novamente: '))
 print("PROCESSANDO...")
 sleep(2)
 print("Você venceu, o número é {} e você precisou de {} tentativas para acertar! :)".format(numerpc, tentativas))

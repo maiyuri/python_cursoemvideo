@@ -8,4 +8,5 @@ while n != 999:
     c = c + 1
 resultfinal = result - 999
 c1 = c - 1
-print("O resultado da soma dos números que você inseriu é de: {} e você inseriu {} números.".format(resultfinal, c1))
+media = round(resultfinal / c1, 2)
+print("O resultado da soma dos números que você inseriu é de: {} e você inseriu {} números e a media dos valores é de {}.".format(resultfinal, c1, media))

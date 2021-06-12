@@ -36,4 +36,6 @@ Número: '''))
     elif menu == 4:
         num1 = int(input('Primeiro número: '))
         num2 = int(input('Segundo número: '))
+    else:
+        print("Opção inválida, tente novamente.")
 
