@@ -7,19 +7,22 @@ print("*" * 30)
 
 primeiro_termo = int(input("Sua PA irá começar com qual número? "))
 razao = int(input("Qual o intervalo dos números? "))
-c = 0
-p = -1
-c2 = 0
-while c < 10:
+c = 1
+qtd = 11
+
+while c < qtd:
     calc = primeiro_termo + (c - 1) * razao
     print(calc, " -> ", end=" ")
     c = c + 1
-
+p = -1
+c2 = c
 while p != 0:
-    p = input("Você gostaria de mostrar mais termos? Se sim, quantos? se não, insira o número 0.")
+    p = int(input('''Você gostaria de mostrar mais termos? Se sim, quantos? se não, insira o número 0.
+Digite:'''))
+    qtd = qtd + p
     if p != 0:
-        while c2 < 10:
-            calc = primeiro_termo + (c - 1) * razao
+        while c2 < qtd:
+            calc = primeiro_termo + (c2 - 1) * razao
             print(calc, " -> ", end=" ")
-            c = c + 1
+            c2 = c2 + 1
 print("Acabou")
