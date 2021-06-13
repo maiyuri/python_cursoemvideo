@@ -6,9 +6,9 @@ print("*" * 30)
 
 primeiro_termo = int(input("Sua PA irá começar com qual número? "))
 razao = int(input("Qual o intervalo dos números? "))
-c = 0
+c = 1
 
-while c < 10:
+while c < 11:
     calc = primeiro_termo + (c - 1) * razao
     print(calc, " -> ", end=" ")
     c = c + 1

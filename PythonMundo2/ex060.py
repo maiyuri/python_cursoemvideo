@@ -12,7 +12,7 @@ print("{}! = ".format(num), end='')
 while n > 0:
     print('{}'.format(n), end='')
     if n > 1:
-        print('x', end='')
+        print(' x ', end='')
     elif n == 1:
         print(' = {} '.format(calc_fatorial), end='')
     n = n - 1
