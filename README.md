@@ -1,5 +1,5 @@
 # Certificado de conclusão
-![image](Certificado1.jpg)
+![image](Certificado1.JPG)
 ***********
-![image](Certificado2.jpg)
+![image](Certificado2.JPG)
 
